@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657832, g: 0.49641222, b: 0.57481664, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -179,7 +179,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &139432741
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -776,7 +776,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &484448441
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1836,7 +1836,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7145074685671826724, guid: 642419f560def974095373584af47e1d,
         type: 3}
+      propertyPath: loop
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7145074685671826724, guid: 642419f560def974095373584af47e1d,
+        type: 3}
       propertyPath: path
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7145074685671826724, guid: 642419f560def974095373584af47e1d,
+        type: 3}
+      propertyPath: speed
+      value: 2000
+      objectReference: {fileID: 0}
+    - target: {fileID: 7145074685671826724, guid: 642419f560def974095373584af47e1d,
+        type: 3}
+      propertyPath: spline
       value: 
       objectReference: {fileID: 1405630367}
     - target: {fileID: 7232582778066387183, guid: 642419f560def974095373584af47e1d,
@@ -2065,7 +2080,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1405630365}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 14688d772bf9b1f41a0cfbc999925cff, type: 3}
+  m_Script: {fileID: 11500000, guid: ddfe77e0fb54f08258c82eb394f42581, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   controlPoints:
@@ -2092,9 +2107,10 @@ MonoBehaviour:
   - {fileID: 1614645387}
   - {fileID: 1663887912}
   - {fileID: 438305617}
-  - {fileID: 502516773}
   - {fileID: 1038265471}
-  resolution: 2000
+  - {fileID: 1614645387}
+  - {fileID: 1614645387}
+  resolution: 20000
 --- !u!1 &1456295117
 GameObject:
   m_ObjectHideFlags: 0

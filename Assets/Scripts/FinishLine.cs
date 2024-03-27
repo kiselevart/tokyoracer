@@ -23,7 +23,7 @@ public class FinishLine : MonoBehaviour
             }
             else {
                 lap = lap + 1;
-                lapText.text = string.Format("Lap: {0}/3", lap);
+                lapText.text = string.Format("LAP: {0}/3", lap);
             }
         }
     }

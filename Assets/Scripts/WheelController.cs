@@ -1,7 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.PlayerLoop;
 
 public class WheelController : MonoBehaviour
 {
@@ -11,35 +8,54 @@ public class WheelController : MonoBehaviour
     [SerializeField] WheelCollider rearRightWheel;
 
     public float acceleration = 800f;
-    public float breakingForce = 450f;
+    public float brakingForce = 450f;
     public float maxTurnAngle = 20f;
-    
+
     private float currentAcceleration = 0f;
-    private float currentBreakingForce = 0f;
+    private float currentBrakingForce = 0f;
     private float currentTurnAngle = 0f;
 
-    private void FixedUpdate() {
-        currentAcceleration = acceleration * Input.GetAxis("Vertical");
+    private void FixedUpdate() 
+    {
+        HandleMotor();
+        HandleSteering();
+        ApplyBraking();
+    }
 
-        if (Input.GetKey(KeyCode.Space)) {
-            currentBreakingForce = breakingForce;
+    private void HandleMotor()
+    {
+        currentAcceleration = acceleration * Input.GetAxis("Vertical") * -1;
+        rearLeftWheel.motorTorque = currentAcceleration;
+        rearRightWheel.motorTorque = currentAcceleration;
+    }
+
+    private void ApplyBraking()
+    {
+        if (Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.S) && currentAcceleration < 0)
+        {
+            currentBrakingForce = brakingForce;
         }
-        else {
-            currentBreakingForce = 0f;
+        else
+        {
+            currentBrakingForce = 0f;
         }
 
-        frontLeftWheel.motorTorque = currentAcceleration;
-        frontRightWheel.motorTorque = currentAcceleration;
+        ApplyBrakeTorque(currentBrakingForce);
+    }
 
-        frontLeftWheel.brakeTorque = currentBreakingForce;
-        frontRightWheel.brakeTorque = currentBreakingForce;
-        rearLeftWheel.brakeTorque = currentBreakingForce;
-        rearRightWheel.brakeTorque = currentBreakingForce;
+    private void ApplyBrakeTorque(float brakeForce)
+    {
+        frontLeftWheel.brakeTorque = brakeForce;
+        frontRightWheel.brakeTorque = brakeForce;
+        rearLeftWheel.brakeTorque = brakeForce;
+        rearRightWheel.brakeTorque = brakeForce;
+    }
 
+    private void HandleSteering()
+    {
         currentTurnAngle = maxTurnAngle * Input.GetAxis("Horizontal");
         frontLeftWheel.steerAngle = currentTurnAngle;
         frontRightWheel.steerAngle = currentTurnAngle;
-
     }
 }
 

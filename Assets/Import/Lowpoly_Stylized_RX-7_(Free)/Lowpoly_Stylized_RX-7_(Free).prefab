@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6033776218022199924}
   - component: {fileID: 6138747663949735862}
   - component: {fileID: 7082607636180332097}
-  m_Layer: 9
+  m_Layer: 7
   m_Name: Circle.007_Material.007_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 3732130516529086332}
   - component: {fileID: 5794887731260138749}
   - component: {fileID: 3828521149776059892}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: cm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -151,7 +151,7 @@ GameObject:
   - component: {fileID: 9112679992985257561}
   - component: {fileID: 6152916079868877372}
   - component: {fileID: 8220130234036294704}
-  m_Layer: 9
+  m_Layer: 7
   m_Name: Circle.002_Material.004_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -234,7 +234,7 @@ GameObject:
   - component: {fileID: 922006141263758311}
   - component: {fileID: 5980942101327626898}
   - component: {fileID: 5452153115043126454}
-  m_Layer: 9
+  m_Layer: 7
   m_Name: Plane.001_Material.006_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -315,7 +315,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4502695415071549764}
-  m_Layer: 9
+  m_Layer: 7
   m_Name: Front Headlights
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -347,7 +347,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3455310621720388718}
-  m_Layer: 9
+  m_Layer: 7
   m_Name: Rear Headlights 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -379,7 +379,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 493141699304182181}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: WheelColliders
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -414,7 +414,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6034454782663321394}
-  m_Layer: 9
+  m_Layer: 7
   m_Name: FR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -449,9 +449,10 @@ GameObject:
   - component: {fileID: 6965881387671676534}
   - component: {fileID: 2521603406867763721}
   - component: {fileID: 4272043911826358466}
-  m_Layer: 9
+  - component: {fileID: 2166127519013729139}
+  m_Layer: 7
   m_Name: Lowpoly_Stylized_RX-7_(Free)
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -483,9 +484,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 811124430292761965}
   serializedVersion: 4
-  m_Mass: 1000
+  m_Mass: 1500
   m_Drag: 0
-  m_AngularDrag: 0
+  m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -501,7 +502,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 1
+  m_CollisionDetection: 0
 --- !u!65 &4272043911826358466
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -521,8 +522,27 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.8317823, y: 1.1825281, z: 4.7365375}
-  m_Center: {x: 0.03177595, y: 0.752297, z: 2.6002367}
+  m_Size: {x: 1.8317823, y: 1.0846214, z: 4.7365375}
+  m_Center: {x: 0.03177595, y: 0.80125034, z: 2.6002367}
+--- !u!114 &2166127519013729139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 811124430292761965}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f940663a8d8c27459d3930abed7c11c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  frontLeftWheel: {fileID: 3579529000587864182}
+  frontRightWheel: {fileID: 3579196668621346591}
+  rearLeftWheel: {fileID: 4387445749465777297}
+  rearRightWheel: {fileID: 2292272558417011314}
+  acceleration: 800
+  brakingForce: 800
+  maxTurnAngle: 20
 --- !u!1 &904964975643365723
 GameObject:
   m_ObjectHideFlags: 0
@@ -532,7 +552,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1218725038133939969}
-  m_Layer: 9
+  m_Layer: 7
   m_Name: RR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -567,7 +587,7 @@ GameObject:
   - component: {fileID: 1692405644082063065}
   - component: {fileID: 2767626785576973642}
   - component: {fileID: 1381060829995510099}
-  m_Layer: 9
+  m_Layer: 7
   m_Name: Circle.009_Material.007_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -648,7 +668,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8094087250394865553}
-  m_Layer: 9
+  m_Layer: 7
   m_Name: RR Tire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -682,7 +702,7 @@ GameObject:
   - component: {fileID: 1338715821312083230}
   - component: {fileID: 5459162241419279351}
   - component: {fileID: 5275111436408857002}
-  m_Layer: 9
+  m_Layer: 7
   m_Name: Circle.001_Material.008_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -764,7 +784,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8890796398690414803}
   - component: {fileID: 3579529000587864182}
-  m_Layer: 9
+  m_Layer: 7
   m_Name: FrontLeftWheel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -834,7 +854,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4966569231925992521}
-  m_Layer: 9
+  m_Layer: 7
   m_Name: FL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -869,7 +889,7 @@ GameObject:
   - component: {fileID: 4334225333192455492}
   - component: {fileID: 4199201178209565068}
   - component: {fileID: 3002385920046730034}
-  m_Layer: 9
+  m_Layer: 7
   m_Name: Circle.003_Material.005_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -950,7 +970,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7132930000624100150}
-  m_Layer: 9
+  m_Layer: 7
   m_Name: FR Wheel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -984,7 +1004,7 @@ GameObject:
   - component: {fileID: 6502604878267514992}
   - component: {fileID: 1088159690783317250}
   - component: {fileID: 82295906578958308}
-  m_Layer: 9
+  m_Layer: 7
   m_Name: Circle.004_Material.007_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1065,7 +1085,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4018195181153456608}
-  m_Layer: 9
+  m_Layer: 7
   m_Name: Windows
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1097,7 +1117,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9185337244312290082}
-  m_Layer: 9
+  m_Layer: 7
   m_Name: FL Wheel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1129,7 +1149,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 26733695694893360}
-  m_Layer: 9
+  m_Layer: 7
   m_Name: FR Tire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1163,7 +1183,7 @@ GameObject:
   - component: {fileID: 2189794926839126971}
   - component: {fileID: 401215290489454098}
   - component: {fileID: 6287947381228155012}
-  m_Layer: 9
+  m_Layer: 7
   m_Name: Plane_Material.002_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1244,7 +1264,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8805755688980041739}
-  m_Layer: 9
+  m_Layer: 7
   m_Name: RL Tire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1276,7 +1296,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6629172846549627877}
-  m_Layer: 9
+  m_Layer: 7
   m_Name: RR Wheel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1310,7 +1330,7 @@ GameObject:
   - component: {fileID: 7047189274147413714}
   - component: {fileID: 6538015667038909609}
   - component: {fileID: 9054724593213313058}
-  m_Layer: 9
+  m_Layer: 7
   m_Name: Circle.010_Material.008_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1393,7 +1413,7 @@ GameObject:
   - component: {fileID: 6855440364764613925}
   - component: {fileID: 2950149516219753819}
   - component: {fileID: 8692842914827704007}
-  m_Layer: 9
+  m_Layer: 7
   m_Name: Circle.006_Material.008_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1475,7 +1495,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4377843500596232063}
   - component: {fileID: 3579196668621346591}
-  m_Layer: 9
+  m_Layer: 7
   m_Name: FrontRightWheel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1547,7 +1567,7 @@ GameObject:
   - component: {fileID: 9075651542471156148}
   - component: {fileID: 893395711870361328}
   - component: {fileID: 5004483191783932521}
-  m_Layer: 9
+  m_Layer: 7
   m_Name: Plane.003_Material.001_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1628,7 +1648,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2733907624051603611}
-  m_Layer: 9
+  m_Layer: 7
   m_Name: Rear Headlights
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1660,7 +1680,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8510073733384272096}
-  m_Layer: 9
+  m_Layer: 7
   m_Name: FL Tire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1694,7 +1714,7 @@ GameObject:
   - component: {fileID: 5093602035289518592}
   - component: {fileID: 7395126841669893363}
   - component: {fileID: 3757829657058748895}
-  m_Layer: 9
+  m_Layer: 7
   m_Name: Circle.005_Material.007_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1775,7 +1795,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4522773030689295978}
-  m_Layer: 9
+  m_Layer: 7
   m_Name: Underbody
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1808,7 +1828,7 @@ GameObject:
   m_Component:
   - component: {fileID: 784286852504119904}
   - component: {fileID: 4387445749465777297}
-  m_Layer: 9
+  m_Layer: 7
   m_Name: RearLeftWheel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1878,7 +1898,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8991714900947098444}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Wheels
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1913,7 +1933,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5862377746159997037}
-  m_Layer: 9
+  m_Layer: 7
   m_Name: Body Shell
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1946,7 +1966,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8818074899355008794}
   - component: {fileID: 2292272558417011314}
-  m_Layer: 9
+  m_Layer: 7
   m_Name: RearRightWheel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2018,7 +2038,7 @@ GameObject:
   - component: {fileID: 595445754863330517}
   - component: {fileID: 8030692901329938486}
   - component: {fileID: 2865161371815351095}
-  m_Layer: 9
+  m_Layer: 7
   m_Name: Circle.008_Material.008_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2099,7 +2119,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 31037640367949582}
-  m_Layer: 9
+  - component: {fileID: 3223250962093543336}
+  m_Layer: 7
   m_Name: RootNode
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2125,6 +2146,28 @@ Transform:
   - {fileID: 1152918068771517928}
   m_Father: {fileID: 6965881387671676534}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &3223250962093543336
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7232582778066387183}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &7299165320293856567
 GameObject:
   m_ObjectHideFlags: 0
@@ -2135,7 +2178,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3418575066244826696}
   - component: {fileID: 3942599621984462875}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Virtual Camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2150,8 +2193,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7299165320293856567}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.9819564, z: 0.1891075, w: 0}
-  m_LocalPosition: {x: 0, y: 3.999999, z: 10}
+  m_LocalRotation: {x: -0, y: -0.979209, z: 0.20285402, w: 0}
+  m_LocalPosition: {x: 0, y: 4, z: 9.24}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2179,7 +2222,7 @@ MonoBehaviour:
   m_LookAt: {fileID: 6965881387671676534}
   m_Follow: {fileID: 6965881387671676534}
   m_Lens:
-    FieldOfView: 90
+    FieldOfView: 50
     OrthographicSize: 10
     NearClipPlane: 0.1
     FarClipPlane: 5000
@@ -2206,7 +2249,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6514624791831625777}
-  m_Layer: 9
+  m_Layer: 7
   m_Name: RL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2239,7 +2282,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5675177119548290426}
-  m_Layer: 9
+  m_Layer: 7
   m_Name: RL Wheel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2273,7 +2316,7 @@ GameObject:
   - component: {fileID: 6240680985615964392}
   - component: {fileID: 7914770491788447191}
   - component: {fileID: 8434698593972595775}
-  m_Layer: 9
+  m_Layer: 7
   m_Name: Plane.002_Material.003_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2354,7 +2397,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1152918068771517928}
-  m_Layer: 9
+  m_Layer: 7
   m_Name: Headlights
   m_TagString: Untagged
   m_Icon: {fileID: 0}

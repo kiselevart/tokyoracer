@@ -21,6 +21,8 @@ public class FinishLine : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             if (lap == 3) {
+                PlayerPrefs.SetFloat("LatestTime", timer.elapsedTime);
+                PlayerPrefs.Save();
                 SceneManager.LoadScene("Scores");
             }
             else {

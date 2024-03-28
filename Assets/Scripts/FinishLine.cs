@@ -7,6 +7,8 @@ using UnityEngine.SceneManagement;
 public class FinishLine : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI lapText;
+    [SerializeField] Timer timer;
+    float time;
     public int lap;
 
     void Start() {

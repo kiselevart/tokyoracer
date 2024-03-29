@@ -1855,6 +1855,7 @@ MonoBehaviour:
   frontRightWheel: {fileID: 9136124719115977696}
   rearLeftWheel: {fileID: 642641558150025364}
   rearRightWheel: {fileID: 6536946183289769172}
+  maxSpeed: 20
   acceleration: 800
   brakingForce: 800
   maxTurnAngle: 20
@@ -2081,7 +2082,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 33dde97fc051751489c257089e2f3765, type: 2}
+  - {fileID: 2100000, guid: f1cb7df6db70af049af82f6a9ce3877d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

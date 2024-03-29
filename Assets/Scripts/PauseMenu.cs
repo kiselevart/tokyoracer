@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.Rendering;
+using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
@@ -24,6 +25,13 @@ public class PauseMenu : MonoBehaviour
     }
 
     public void Resume() {
+        pauseMenuUI.SetActive(false);
+        Time.timeScale = 1f;
+        GameIsPaused = false;
+    }
+
+    public void Restart() {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
         GameIsPaused = false;

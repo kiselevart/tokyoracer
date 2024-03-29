@@ -23,7 +23,7 @@ public class FinishLine : MonoBehaviour
             if (lap == 3) {
                 PlayerPrefs.SetFloat("LatestTime", timer.elapsedTime);
                 PlayerPrefs.Save();
-                SceneManager.LoadScene("Scores");
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             }
             else {
                 lap = lap + 1;

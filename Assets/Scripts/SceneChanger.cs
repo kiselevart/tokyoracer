@@ -9,4 +9,7 @@ public class SceneChanger : MonoBehaviour
     public void ChangeScene(string sceneName) {
         SceneManager.LoadScene(sceneName);
     }
+    public void NextScene() {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex +1);
+    }
 }

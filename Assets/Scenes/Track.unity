@@ -2534,6 +2534,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 903364416}
     m_Modifications:
+    - target: {fileID: 113153907891082633, guid: 74748ff39a5ab2f448ff574bad6528f7,
+        type: 3}
+      propertyPath: timer
+      value: 
+      objectReference: {fileID: 1373994}
+    - target: {fileID: 113153907891082633, guid: 74748ff39a5ab2f448ff574bad6528f7,
+        type: 3}
+      propertyPath: lapText
+      value: 
+      objectReference: {fileID: 152688208}
     - target: {fileID: 1191884581731664834, guid: 74748ff39a5ab2f448ff574bad6528f7,
         type: 3}
       propertyPath: m_Name

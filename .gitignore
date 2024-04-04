@@ -74,3 +74,6 @@ crashlytics-build.properties
 # Large Track Assets
 /[Aa]ssets/AnimeTrack
 /[Aa]ssets/AnimeTrack.meta
+
+# builds
+/build1 

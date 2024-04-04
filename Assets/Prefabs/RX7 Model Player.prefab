@@ -2021,8 +2021,8 @@ MonoBehaviour:
   rearLeftWheel: {fileID: 642641558150025364}
   rearRightWheel: {fileID: 6536946183289769172}
   maxSpeed: 20
-  acceleration: 800
-  brakingForce: 1600
+  acceleration: 1000
+  brakingForce: 2000
   maxTurnAngle: 20
 --- !u!114 &494475767756576350
 MonoBehaviour:

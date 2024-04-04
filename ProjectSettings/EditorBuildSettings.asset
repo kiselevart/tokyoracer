@@ -8,19 +8,22 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Menu.unity
     guid: 4045e5641845f8147a5291ec3bc0d943
-  - enabled: 0
-    path: Assets/Scenes/OldScenes/Track.unity
-    guid: a9cb68ce863861d4f8ece48d1ee45c55
-  - enabled: 0
-    path: Assets/Scenes/OldScenes/Track2.unity
-    guid: 995e20d6a16744e4f8ae1797324ff682
-  - enabled: 0
-    path: Assets/Scenes/Score2.unity
-    guid: a2d784d969ed7ac47b0968e9607c3c36
   - enabled: 1
     path: Assets/Scenes/Circuit1.unity
     guid: 83760dd98fe89364daec0c8817772284
   - enabled: 1
     path: Assets/Scenes/Score1.unity
     guid: cc913051cfbb138458a9c7930fae245a
+  - enabled: 1
+    path: Assets/Scenes/Circuit2.unity
+    guid: cf939fb13610780448f08e49ccc452ab
+  - enabled: 1
+    path: Assets/Scenes/Score2.unity
+    guid: a2d784d969ed7ac47b0968e9607c3c36
+  - enabled: 1
+    path: Assets/Scenes/Full Curcuit.unity
+    guid: d5d8eb908c3befe4b938e2c06dee5f24
+  - enabled: 1
+    path: Assets/Scenes/Score3.unity
+    guid: 672d5f3107c81a6408c0a39436e640d1
   m_configObjects: {}

@@ -19,7 +19,7 @@ public class FollowCurve : MonoBehaviour
 
         Vector3 tangent = EstimateTangent();
         transform.rotation = Quaternion.LookRotation(-tangent, Vector3.up);
-        if (t >= 1f) { return; }
+        if (t >= 1f) { t = 0f; }
     }
 
     private Vector3 EstimateTangent()

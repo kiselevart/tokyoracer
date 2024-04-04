@@ -262,8 +262,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 301885478017963623}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.979209, z: 0.20285402, w: 0}
-  m_LocalPosition: {x: 0, y: 4, z: 9.24}
+  m_LocalRotation: {x: -0, y: -0.9792155, z: 0.20282264, w: 0}
+  m_LocalPosition: {x: 0, y: 4, z: 9.241624}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1766,7 +1766,7 @@ GameObject:
   - component: {fileID: 1170130949581935160}
   - component: {fileID: 3007006566714886758}
   m_Layer: 7
-  m_Name: RX7 Model (Black)
+  m_Name: RX7 Model Player
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1857,7 +1857,7 @@ MonoBehaviour:
   rearRightWheel: {fileID: 6536946183289769172}
   maxSpeed: 20
   acceleration: 800
-  brakingForce: 800
+  brakingForce: 1600
   maxTurnAngle: 20
 --- !u!1 &5966570795750658509
 GameObject:

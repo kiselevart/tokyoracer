@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class WheelController : MonoBehaviour
@@ -17,6 +18,7 @@ public class WheelController : MonoBehaviour
     private float currentBrakingForce = 0f;
     private float currentTurnAngle = 0f;
     private Rigidbody rb;
+
 
     void Start() {
         rb = GetComponent<Rigidbody>();
@@ -76,6 +78,11 @@ public class WheelController : MonoBehaviour
 
     public float getSpeed() {
         return rb.velocity.magnitude;
+    }
+
+    public float getSpeedRatio() {
+        float speed = getSpeed();
+        return speed/maxSpeed;
     }
 }
 

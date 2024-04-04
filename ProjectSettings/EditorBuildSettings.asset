@@ -21,9 +21,15 @@ EditorBuildSettings:
     path: Assets/Scenes/Score2.unity
     guid: a2d784d969ed7ac47b0968e9607c3c36
   - enabled: 1
-    path: Assets/Scenes/Full Curcuit.unity
-    guid: d5d8eb908c3befe4b938e2c06dee5f24
+    path: Assets/Scenes/Circuit3.unity
+    guid: 716eea534d7bc7f469e28d5b4c3c02c2
   - enabled: 1
     path: Assets/Scenes/Score3.unity
     guid: 672d5f3107c81a6408c0a39436e640d1
+  - enabled: 1
+    path: Assets/Scenes/Circuit4.unity
+    guid: bb8e26b2714f6af4b9212a5a736a02f5
+  - enabled: 1
+    path: Assets/Scenes/Score4.unity
+    guid: 43d76649c342cc54d84967fcee7aad2b
   m_configObjects: {}

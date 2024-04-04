@@ -10,11 +10,9 @@ public class SceneChanger : MonoBehaviour
         SceneManager.LoadScene(sceneName);
     }
     public void NextScene() {
-        if (SceneManager.GetActiveScene().buildIndex+1 == SceneManager.sceneCountInBuildSettings) {
-            SceneManager.LoadScene(0);
-        }
-        else {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex +1);
-        }
+        Debug.Log("USING SceneChanger");
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        int nextSceneIndex = (currentSceneIndex + 1) % SceneManager.sceneCountInBuildSettings;
+        SceneManager.LoadScene(nextSceneIndex);
     }
 }

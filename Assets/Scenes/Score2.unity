@@ -355,7 +355,7 @@ PrefabInstance:
     - target: {fileID: 1335854366887513855, guid: ab358c4506cbe3642b3d9cf96b550a97,
         type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1335854366887513855, guid: ab358c4506cbe3642b3d9cf96b550a97,
         type: 3}
@@ -365,7 +365,7 @@ PrefabInstance:
     - target: {fileID: 1335854366887513855, guid: ab358c4506cbe3642b3d9cf96b550a97,
         type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ChangeScene
+      value: NextScene
       objectReference: {fileID: 0}
     - target: {fileID: 1335854366887513855, guid: ab358c4506cbe3642b3d9cf96b550a97,
         type: 3}

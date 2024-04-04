@@ -262,8 +262,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 301885478017963623}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.00000016391276, y: -0.9793837, z: 0.20200871, w: -0.0000008046626}
-  m_LocalPosition: {x: -0.000016212465, y: 4, z: 9.283929}
+  m_LocalRotation: {x: 0.0000015795229, y: -0.9793881, z: 0.20198734, w: 0.000007659196}
+  m_LocalPosition: {x: 0.00014400484, y: 4, z: 9.285043}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2020,10 +2020,10 @@ MonoBehaviour:
   frontRightWheel: {fileID: 9136124719115977696}
   rearLeftWheel: {fileID: 642641558150025364}
   rearRightWheel: {fileID: 6536946183289769172}
-  maxSpeed: 20
+  maxSpeed: 25
   acceleration: 1000
-  brakingForce: 2000
-  maxTurnAngle: 20
+  brakingForce: 5000
+  maxTurnAngle: 30
 --- !u!114 &494475767756576350
 MonoBehaviour:
   m_ObjectHideFlags: 0
